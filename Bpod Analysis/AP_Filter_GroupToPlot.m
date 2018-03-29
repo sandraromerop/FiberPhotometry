@@ -1,7 +1,7 @@
 function [GTP,GTPB]=AP_Filter_GroupToPlot(Analysis)
 %
 %
-%function designed by Quentin 2017
+%function designed by Quentin 2017%%%%%%%%%%%%
 GTP={};
 GTPB={};
 index=0;
