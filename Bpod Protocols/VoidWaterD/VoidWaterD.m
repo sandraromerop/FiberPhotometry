@@ -1,7 +1,7 @@
 function VoidWaterD
 
 % SETUP
-% > Connect the water valve in the box to Bpod Port#1.
+% > Connect the water valve in the box to Bpod Port#1.%%%%%%%%%%
 % > Connect the air valve in the box to Bpod
 % Port#2.%------------------------------
 global BpodSystem
