@@ -62,6 +62,7 @@ try
         Analysis.AllData.Wheel.Time(i,:)          	=thisWheel(1,:);
         Analysis.AllData.Wheel.Deg(i,:)          	=thisWheel(2,:);
         Analysis.AllData.Wheel.Distance(i,:)       	=thisWheel(3,:);
+        Analysis.AllData.Wheel.LinVelocity(i,:)     =diff(thisWheel(3,:)); %%%%%%%% 
         Analysis.AllData.Wheel.Baseline(i)        	=sumabs(diff(thisWheel(3,BaselinePt(1):BaselinePt(2))));
         Analysis.AllData.Wheel.Cue(i)             	=sumabs(diff(thisWheel(3,thisWheel(1,:)>CueTime(1) & thisWheel(1,:)<CueTime(2))))/(CueTime(2)-CueTime(1));
         Analysis.AllData.Wheel.Outcome(i)           =sumabs(diff(thisWheel(3,thisWheel(1,:)>OutcomeTime(1) & thisWheel(1,:)<OutcomeTime(2))))/(OutcomeTime(2)-OutcomeTime(1));
